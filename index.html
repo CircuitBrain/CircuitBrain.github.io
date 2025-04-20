@@ -4,51 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Circuit Brain Portfolio</title>
-  <!-- Link to our external CSS file -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header with navigation menu -->
+  <!-- Navigation Bar -->
   <header>
     <nav class="nav-menu">
+      <div class="logo">
+        <h1>Circuit Brain</h1>
+      </div>
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#resume">Portfolio / Resume</a></li>
+        <li><a href="#portfolio">About Me</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#clubs">Clubs</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#certs">Certificates & Achievements</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main content area with multiple sections -->
+  <!-- Main Content -->
   <main>
     <!-- HOME SECTION -->
     <section id="home" class="fade-in">
-      <h1>Welcome to Circuit Brain</h1>
-      <p>
-        Hello! I’m Circuit Brain. This portfolio showcases my resume, education, clubs, projects, certificates, and achievements.
-      </p>
+      <h2>Welcome to My Portfolio</h2>
+      <p>Hi! I'm Circuit Brain, a passionate tech student focused on network, security, and innovative projects.</p>
     </section>
 
-    <!-- PORTFOLIO / RESUME SECTION -->
-    <section id="resume" class="fade-in">
-      <h2>Portfolio / Resume</h2>
-      <p>
-        You can view or download my resume <a href="your-resume.pdf" target="_blank">here</a>.
-      </p>
+    <!-- PORTFOLIO / ABOUT ME SECTION -->
+    <section id="portfolio" class="fade-in">
+      <div class="about-container">
+        <div class="about-photo">
+          <!-- Replace 'photo.jpg' with your actual photo file -->
+          <img src="photo.jpg" alt="Photo of Circuit Brain" />
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I am a dedicated engineering student with a keen interest in developing innovative tech solutions. 
+            My portfolio highlights my academic achievements, club involvement, and project work that demonstrates my skills in electronics, programming, and design.
+          </p>
+          <a href="resume.pdf" class="btn" download>View My Resume</a>
+        </div>
+      </div>
     </section>
 
-    <!-- EDUCATIONAL QUALIFICATIONS SECTION -->
+    <!-- EDUCATION SECTION -->
     <section id="education" class="fade-in">
       <h2>Educational Qualifications</h2>
       <ul>
-        <li><strong>High School:</strong> ABC High School</li>
-        <li><strong>Undergraduate:</strong> XYZ University (B.Tech in Computer Science)</li>
-        <!-- Add more educational details if needed -->
+        <li><strong>1. Delhi Public School, Pune:</strong> Nursery to 10th – 82% percentile</li>
+        <li><strong>2. SNBP, Pune:</strong> 11th &amp; 12th – 78% percentile</li>
+        <li><strong>3. MIT-WPU College of Engineering:</strong> 2nd Year – CGPA 7.2</li>
       </ul>
     </section>
 
@@ -56,9 +65,12 @@
     <section id="clubs" class="fade-in">
       <h2>Clubs</h2>
       <ul>
-        <li>Computer Science Club</li>
-        <li>Robotics Club</li>
-        <!-- List any clubs you have been part of -->
+        <li>
+          <strong>E-Cell MITWPU:</strong> Currently serving as the Department Head of Sponsorship Relations.
+        </li>
+        <li>
+          <strong>Skytroopers MITWPU:</strong> Ex-member and former Avionics Team Member, contributed to innovative robotics and avionics designs.
+        </li>
       </ul>
     </section>
 
@@ -66,62 +78,97 @@
     <section id="projects" class="fade-in">
       <h2>Projects</h2>
       <div class="project-gallery">
-        <!-- Replace src with your project image links -->
+        <!-- Project 1 -->
         <div class="project-item">
-          <img src="project1.jpg" alt="Project 1" />
-          <p>Project Title 1 – Description of network/security project.</p>
+          <img src="project1.jpg" alt="Voice Controlled Car" />
+          <div class="project-desc">
+            <h3>Voice Controlled Car</h3>
+            <p>
+              Built using Arduino Uno R3 and a Bluetooth module, this project won 2nd prize at the IEEE exhibition in my 1st year.
+            </p>
+          </div>
         </div>
+        <!-- Project 2 -->
         <div class="project-item">
-          <img src="project2.jpg" alt="Project 2" />
-          <p>Project Title 2 – Description of project detailing features and outcomes.</p>
+          <img src="project2.jpg" alt="Soil Parameter Detector" />
+          <div class="project-desc">
+            <h3>Soil Parameter Detector</h3>
+            <p>
+              Developed with ESP32, DHT22, pH sensor, MQ sensor, and a soil moisture sensor to remotely display soil parameters on a mobile device.
+            </p>
+          </div>
         </div>
-        <!-- Add more project items as needed -->
+        <!-- Project 3 -->
+        <div class="project-item">
+          <img src="project3.jpg" alt="ESP32 Controlled Drone" />
+          <div class="project-desc">
+            <h3>ESP32 Controlled Drone</h3>
+            <p>
+              Utilized ESP32 as both transmitter and flight controller to build a drone with advanced control features.
+            </p>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-item">
+          <img src="project4.jpg" alt="Unmanned Ground Vehicle (UGV)" />
+          <div class="project-desc">
+            <h3>Unmanned Ground Vehicle (UGV)</h3>
+            <p>
+              An ongoing project under faculty mentorship aimed at patenting innovative technologies for an autonomous ground vehicle.
+            </p>
+          </div>
+        </div>
+        <!-- Project 5 (Optional Additional Project) -->
+        <div class="project-item">
+          <img src="project5.jpg" alt="Additional Innovative Project" />
+          <div class="project-desc">
+            <h3>Additional Innovative Project</h3>
+            <p>
+              A creative project showcasing my skills in system integration and problem-solving across multiple platforms.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- CERTIFICATES SECTION -->
-    <section id="certificates" class="fade-in">
-      <h2>Certificates</h2>
+    <!-- CERTIFICATES & ACHIEVEMENTS SECTION -->
+    <section id="certs" class="fade-in">
+      <h2>Certificates &amp; Achievements</h2>
       <div class="certificate-gallery">
-        <!-- Replace src with your certificate image links -->
         <div class="certificate-item">
           <img src="certificate1.jpg" alt="Certificate 1" />
-          <p>Certificate in Network Security</p>
+          <p>Certificate in C Programming</p>
         </div>
         <div class="certificate-item">
           <img src="certificate2.jpg" alt="Certificate 2" />
-          <p>Certificate in Programming Fundamentals</p>
+          <p>Certificate in Network Security</p>
         </div>
-        <!-- Add more certificates if needed -->
+        <div class="certificate-item">
+          <img src="certificate3.jpg" alt="Certificate 3" />
+          <p>Certificate in Web Development</p>
+        </div>
+        <!-- Additional certificates can be added here -->
       </div>
-    </section>
-
-    <!-- ACHIEVEMENTS SECTION -->
-    <section id="achievements" class="fade-in">
-      <h2>Achievements</h2>
-      <ul>
-        <li>Dean’s List 2024</li>
-        <li>Winner of [Competition Name], 2023</li>
-        <!-- Add additional achievements -->
-      </ul>
     </section>
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="fade-in">
       <h2>Contact Me</h2>
-      <p>
-        Get in touch by emailing me at <a href="mailto:your.email@example.com">your.email@example.com</a>
-      </p>
-      <!-- You can also include a contact form if desired -->
+      <p>If you’d like to get in touch, please reach out to me via any of the platforms below:</p>
+      <ul class="contact-info">
+        <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+        <li>Phone: <a href="tel:+1234567890">+1 234 567 890</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">linkedin.com/in/your-linkedin</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/your-instagram" target="_blank">@your-instagram</a></li>
+      </ul>
     </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Circuit Brain. All Rights Reserved.</p>
+    <p>© 2025 Circuit Brain | All rights reserved.</p>
   </footer>
 
-  <!-- Link to external JavaScript file -->
   <script src="script.js"></script>
 </body>
 </html>
